@@ -1,3 +1,5 @@
+#include "complie.h"
+#ifdef ALG_KMP
 #ifndef KMP_HPP_
 #define KMP_HPP_
 
@@ -8,4 +10,5 @@ using namespace std;
 int KMP(string str, string pattern);
 
 #endif // !KMP
+#endif // KMP
 

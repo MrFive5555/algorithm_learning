@@ -146,13 +146,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="complie.h" />
     <ClInclude Include="KMP.h" />
     <ClInclude Include="logicProblem.h" />
+    <ClInclude Include="MaxSubArray.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="KMP.cpp" />
     <ClCompile Include="main_KMP.cpp" />
     <ClCompile Include="main_logicProblem.cpp" />
+    <ClCompile Include="main_MaxSubArray.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

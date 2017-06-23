@@ -1,5 +1,5 @@
-#define MAIN_KMP_H_
-#ifdef MAIN_KMP_H_
+#include "complie.h"
+#ifdef ALG_KMP
 
 #include <iostream>
 

@@ -21,6 +21,12 @@
     <ClInclude Include="KMP.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="complie.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxSubArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main_logicProblem.cpp">
@@ -31,6 +37,9 @@
     </ClCompile>
     <ClCompile Include="main_KMP.cpp">
       <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main_MaxSubArray.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

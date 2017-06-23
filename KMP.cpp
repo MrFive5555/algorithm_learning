@@ -1,3 +1,5 @@
+#include "complie.h"
+#ifdef ALG_KMP
 #include <memory>
 #include <vector>
 #include "KMP.h"
@@ -39,3 +41,5 @@ int KMP(string str, string pattern)
         return str.length();
     }
 }
+
+#endif // KMP

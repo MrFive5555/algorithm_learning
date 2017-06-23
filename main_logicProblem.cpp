@@ -1,4 +1,5 @@
-#ifdef MAIN_LOGINPROBLEM_CPP_
+#include "complie.h"
+#ifdef ALG_LOGICPROPLEM
 
 #include <iostream>
 #include "logicProblem.h"

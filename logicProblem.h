@@ -1,3 +1,6 @@
+#include "complie.h"
+#ifdef ALG_LOGICPROPLEM
+
 #ifndef LOGICPROBLEM_H_
 #define LOGICPROBLEM_H_
 
@@ -95,3 +98,5 @@ private:
     bool hasExecute;
 };
 #endif
+
+#endif // ALG_LOGINPROBLEM
