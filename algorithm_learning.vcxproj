@@ -147,15 +147,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="complie.h" />
+    <ClInclude Include="FindGoodChip.h" />
     <ClInclude Include="KMP.h" />
     <ClInclude Include="logicProblem.h" />
     <ClInclude Include="MaxSubArray.h" />
+    <ClInclude Include="Random.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="findGoodChip.cpp" />
     <ClCompile Include="KMP.cpp" />
+    <ClCompile Include="main_findGoodChip.cpp" />
     <ClCompile Include="main_KMP.cpp" />
     <ClCompile Include="main_logicProblem.cpp" />
     <ClCompile Include="main_MaxSubArray.cpp" />
+    <ClCompile Include="Random.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
