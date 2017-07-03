@@ -25,6 +25,9 @@
     <Filter Include="源文件\FindGoodChip">
       <UniqueIdentifier>{43de63a0-638b-4f67-87c8-6ba96af5d82c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\calculateParse">
+      <UniqueIdentifier>{6df0a6bf-b7e8-4e32-9597-e6d112654ac3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="complie.h">
@@ -44,6 +47,9 @@
     </ClInclude>
     <ClInclude Include="Random.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="calculateParse.h">
+      <Filter>源文件\calculateParse</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +73,12 @@
     </ClCompile>
     <ClCompile Include="Random.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="calculatePasre.cpp">
+      <Filter>源文件\calculateParse</Filter>
+    </ClCompile>
+    <ClCompile Include="main_calculateParse.cpp">
+      <Filter>源文件\calculateParse</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -4,9 +4,10 @@
 //#define ALG_KMP
 //#define ALG_LOGICPROPLEM
 //#define ALG_MAXSUBARRAY
-#define ALG_FINDGOODCHIP
+//#define ALG_FINDGOODCHIP
+#define ALG_CALCULATEPARSE
 
 //tool
-#define RANDOM
+//#define RANDOM
 
 #endif // !COMPILE_H_
