@@ -7,40 +7,32 @@
 
 double Calculate::execute(const char* str) throw (FormatErr)
 {
-    try {
-        double firTerm = getTerm(str);
-        while (*str != 0) {
-            if (*str == '+') {
-                firTerm += getTerm(++str);
-            } else if (*str == '-') {
-                firTerm -= getTerm(++str);
-            } else {
-                throw FormatErr(str);
-            }
+    double firTerm = getTerm(str);
+    while (*str != 0) {
+        if (*str == '+') {
+            firTerm += getTerm(++str);
+        } else if (*str == '-') {
+            firTerm -= getTerm(++str);
+        } else {
+            throw FormatErr(str);
         }
-        return firTerm;
-    } catch (FormatErr err) {
-        throw err;
     }
+    return firTerm;
 }
 
 double Calculate::getTerm(const char*& str) throw (FormatErr)
 {
-    try {
-        double first = getNumber(str);
-        while (*str != '+' && *str != '-' && *str != 0) {
-            if (*str == '*') {
-                first *= getNumber(++str);
-            } else if (*str == '/') {
-                first /= getNumber(++str);
-            } else {
-                throw FormatErr(str);
-            }
+    double first = getNumber(str);
+    while (*str != '+' && *str != '-' && *str != 0) {
+        if (*str == '*') {
+            first *= getNumber(++str);
+        } else if (*str == '/') {
+            first /= getNumber(++str);
+        } else {
+            throw FormatErr(str);
         }
-        return first;
-    } catch (FormatErr err) {
-        throw err;
     }
+    return first;
 }
 
 double Calculate::getNumber(const char*& str)
