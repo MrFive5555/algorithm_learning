@@ -8,7 +8,7 @@
 
 class FormatErr {
 public:
-    FormatErr(const char* errPtr) :errPtr(errPtr) {}
+    FormatErr(const char* errPtr) : errPtr(errPtr) {}
 private:
     const char* errPtr;
 };
@@ -18,7 +18,8 @@ public:
     static double execute(const char* str) throw (FormatErr);
 private:
     static double getTerm(const char*& str) throw (FormatErr);
-    static double getNumber(const char*& str);
+    static double parseBrackt(const char*& str) throw (FormatErr);
+    static double getNumber(const char*& str) throw (FormatErr);
 };
 
 
