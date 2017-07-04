@@ -6,6 +6,8 @@
 
 #pragma warning(disable:4290)
 
+#include <stdexcept>
+
 class FormatErr {
 public:
     FormatErr(const char* errPtr) : errPtr(errPtr) {}
@@ -15,11 +17,13 @@ private:
 
 class Calculate{
 public:
-    static double execute(const char* str) throw (FormatErr);
+    Calculate() : allowSign(true) {}
+    double execute(const char* str) throw (FormatErr, std::invalid_argument);
 private:
-    static double getTerm(const char*& str) throw (FormatErr);
-    static double parseBrackt(const char*& str) throw (FormatErr);
-    static double getNumber(const char*& str) throw (FormatErr);
+    double getTerm(const char*& str) throw (FormatErr, std::invalid_argument);
+    double parseBrackt(const char*& str) throw (FormatErr, std::invalid_argument);
+    double getNumber(const char*& str) throw (FormatErr, std::invalid_argument);
+    bool allowSign;
 };
 
 

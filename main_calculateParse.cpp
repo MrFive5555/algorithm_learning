@@ -12,7 +12,8 @@ void test_parse(const char* str, double result)
 {
     double cal;
     try {
-        cal = Calculate::execute(str);
+        Calculate parse;
+        cal = parse.execute(str);
         if (!(fabs(cal - result) < ERROR)) {
             cout << "=======================================================" << endl
                 << "[error]" << endl
@@ -23,6 +24,21 @@ void test_parse(const char* str, double result)
     } catch (FormatErr) {
         cout << "=======================================================" << endl
             << "[Format Error]" << endl
+            << "[expression] " << str << endl << endl;
+    }
+}
+
+void test_format(const char* str) {
+    bool format = false;
+    try {
+        Calculate parse;
+        parse.execute(str);
+    } catch (FormatErr){
+        format = true;
+    }
+    if(!format) {
+        cout << "=======================================================" << endl
+            << "[Format Error But Not Test]" << endl
             << "[expression] " << str << endl << endl;
     }
 }
@@ -51,6 +67,14 @@ int main()
     test_parse("(1-1)*(1+3)", 0);
     test_parse("(3-1)*(1+3)", 8);
     test_parse("(3/4)*(4/3)", 1);
+    test_parse("(-1+2)", 1);
+
+    test_format("(3+11)1+1");
+    test_format("3+(3))");
+    test_format("*23");
+    test_format("1++1");
+    test_format("1-+1");
+    test_format("(3+1+1+1");
     cout << "[finish]" << endl;
 }
 #endif // ALG_CALCULATEPARSE
