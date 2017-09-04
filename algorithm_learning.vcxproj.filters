@@ -28,6 +28,9 @@
     <Filter Include="源文件\calculateParse">
       <UniqueIdentifier>{6df0a6bf-b7e8-4e32-9597-e6d112654ac3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\MorrisTraverse">
+      <UniqueIdentifier>{6f3c20cd-bbe5-4c9a-a8fc-257c6f7f3c08}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="complie.h">
@@ -50,6 +53,9 @@
     </ClInclude>
     <ClInclude Include="calculateParse.h">
       <Filter>源文件\calculateParse</Filter>
+    </ClInclude>
+    <ClInclude Include="MorrisTraverse.h">
+      <Filter>源文件\MorrisTraverse</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +85,12 @@
     </ClCompile>
     <ClCompile Include="main_calculateParse.cpp">
       <Filter>源文件\calculateParse</Filter>
+    </ClCompile>
+    <ClCompile Include="MorrisTraverse.cpp">
+      <Filter>源文件\MorrisTraverse</Filter>
+    </ClCompile>
+    <ClCompile Include="main_MorrisTraverse.cpp">
+      <Filter>源文件\MorrisTraverse</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

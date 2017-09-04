@@ -5,7 +5,8 @@
 //#define ALG_LOGICPROPLEM
 //#define ALG_MAXSUBARRAY
 //#define ALG_FINDGOODCHIP
-#define ALG_CALCULATEPARSE
+//#define ALG_CALCULATEPARSE
+#define ALG_MORRIS_TRAVERSE
 
 //tool
 //#define RANDOM
