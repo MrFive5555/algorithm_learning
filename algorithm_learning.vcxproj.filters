@@ -31,6 +31,9 @@
     <Filter Include="源文件\MorrisTraverse">
       <UniqueIdentifier>{6f3c20cd-bbe5-4c9a-a8fc-257c6f7f3c08}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\allPermutation">
+      <UniqueIdentifier>{038a8724-e003-472b-8c3f-2a28fe16ae5a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="complie.h">
@@ -56,6 +59,9 @@
     </ClInclude>
     <ClInclude Include="MorrisTraverse.h">
       <Filter>源文件\MorrisTraverse</Filter>
+    </ClInclude>
+    <ClInclude Include="allPermutation.h">
+      <Filter>源文件\allPermutation</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +97,12 @@
     </ClCompile>
     <ClCompile Include="main_MorrisTraverse.cpp">
       <Filter>源文件\MorrisTraverse</Filter>
+    </ClCompile>
+    <ClCompile Include="allPermutation.cpp">
+      <Filter>源文件\allPermutation</Filter>
+    </ClCompile>
+    <ClCompile Include="main_allPermutation.cpp">
+      <Filter>源文件\allPermutation</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

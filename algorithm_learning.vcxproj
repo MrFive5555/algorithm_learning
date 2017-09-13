@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="allPermutation.h" />
     <ClInclude Include="calculateParse.h" />
     <ClInclude Include="complie.h" />
     <ClInclude Include="FindGoodChip.h" />
@@ -156,9 +157,11 @@
     <ClInclude Include="Random.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="allPermutation.cpp" />
     <ClCompile Include="calculatePasre.cpp" />
     <ClCompile Include="findGoodChip.cpp" />
     <ClCompile Include="KMP.cpp" />
+    <ClCompile Include="main_allPermutation.cpp" />
     <ClCompile Include="main_calculateParse.cpp" />
     <ClCompile Include="main_findGoodChip.cpp" />
     <ClCompile Include="main_KMP.cpp" />

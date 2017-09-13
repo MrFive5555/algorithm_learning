@@ -6,7 +6,8 @@
 //#define ALG_MAXSUBARRAY
 //#define ALG_FINDGOODCHIP
 //#define ALG_CALCULATEPARSE
-#define ALG_MORRIS_TRAVERSE
+//#define ALG_MORRIS_TRAVERSE
+#define ALG_ALLPERMUTATION
 
 //tool
 //#define RANDOM
